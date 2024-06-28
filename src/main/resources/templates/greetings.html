@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome User</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+        h1{
+        font-family: fantasy;
+        color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 > <p th:text="|Welcome ${name}!|"/></h1>
+        <a href="/index.html">Login</a>
+        <form action="/greeting" method="GET">
+            <div class="form-group">
+             <p th:text="|Hello, ${name}!|" />
+              </div>
+           
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (not required for basic functionality) -->
+    <!-- These are optional unless you need additional Bootstrap features -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+   
